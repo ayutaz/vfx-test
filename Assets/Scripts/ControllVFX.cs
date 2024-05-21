@@ -11,6 +11,7 @@ public class ControllVFX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // ランダムにvfxのcubeを回転する
+        transform.Rotate(new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)) * Time.deltaTime * 0.02f);
     }
 }
